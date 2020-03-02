@@ -1,0 +1,6 @@
+framework module PositionFramework {
+  umbrella header "PositionFramework.h"
+
+  export *
+  module * { export * }
+}

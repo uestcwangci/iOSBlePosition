@@ -13,6 +13,8 @@
 		1192D9FF240A9A2A00EDF509 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1192D9FD240A9A2A00EDF509 /* Main.storyboard */; };
 		1192DA01240A9A2E00EDF509 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1192DA00240A9A2E00EDF509 /* Assets.xcassets */; };
 		1192DA04240A9A2E00EDF509 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1192DA02240A9A2E00EDF509 /* LaunchScreen.storyboard */; };
+		1192DA35240ACD5200EDF509 /* figurePrint Library.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1192DA34240ACD5200EDF509 /* figurePrint Library.plist */; };
+		1192DA3B240B832A00EDF509 /* PositionFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1192DA3A240B832A00EDF509 /* PositionFramework.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,9 @@
 		1192DA00240A9A2E00EDF509 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1192DA03240A9A2E00EDF509 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1192DA05240A9A2E00EDF509 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1192DA24240AC48800EDF509 /* BridgeHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgeHeader.h; sourceTree = "<group>"; };
+		1192DA34240ACD5200EDF509 /* figurePrint Library.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "figurePrint Library.plist"; sourceTree = "<group>"; };
+		1192DA3A240B832A00EDF509 /* PositionFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PositionFramework.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1192DA3B240B832A00EDF509 /* PositionFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +48,7 @@
 			children = (
 				1192D9F6240A9A2A00EDF509 /* TestFramework */,
 				1192D9F5240A9A2A00EDF509 /* Products */,
+				1192DA0B240A9DCD00EDF509 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +63,8 @@
 		1192D9F6240A9A2A00EDF509 /* TestFramework */ = {
 			isa = PBXGroup;
 			children = (
+				1192DA3A240B832A00EDF509 /* PositionFramework.framework */,
+				1192DA34240ACD5200EDF509 /* figurePrint Library.plist */,
 				1192D9F7240A9A2A00EDF509 /* AppDelegate.swift */,
 				1192D9F9240A9A2A00EDF509 /* SceneDelegate.swift */,
 				1192D9FB240A9A2A00EDF509 /* ViewController.swift */,
@@ -63,8 +72,16 @@
 				1192DA00240A9A2E00EDF509 /* Assets.xcassets */,
 				1192DA02240A9A2E00EDF509 /* LaunchScreen.storyboard */,
 				1192DA05240A9A2E00EDF509 /* Info.plist */,
+				1192DA24240AC48800EDF509 /* BridgeHeader.h */,
 			);
 			path = TestFramework;
+			sourceTree = "<group>";
+		};
+		1192DA0B240A9DCD00EDF509 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +145,7 @@
 				1192DA04240A9A2E00EDF509 /* LaunchScreen.storyboard in Resources */,
 				1192DA01240A9A2E00EDF509 /* Assets.xcassets in Resources */,
 				1192D9FF240A9A2A00EDF509 /* Main.storyboard in Resources */,
+				1192DA35240ACD5200EDF509 /* figurePrint Library.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,13 +304,23 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PAT52X3P85;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/TestFramework";
 				INFOPLIST_FILE = TestFramework/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TestFramework",
+				);
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-Objc",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wangci.position.TestFramework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = TestFramework/BridgeHeader.h;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -304,13 +332,23 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PAT52X3P85;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/TestFramework";
 				INFOPLIST_FILE = TestFramework/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TestFramework",
+				);
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-Objc",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wangci.position.TestFramework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = TestFramework/BridgeHeader.h;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

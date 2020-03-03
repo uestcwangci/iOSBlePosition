@@ -4,13 +4,9 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>.DS_Store</key>
-		<data>
-		IwjO0iT17U54LtQWzASVNVGlNo8=
-		</data>
 		<key>Headers/BlePosition.h</key>
 		<data>
-		S2hodKBRsD3yAPCJEQ/hPmCCTVo=
+		lNuNP8T/7/aZ6XULk84AGqiyeJs=
 		</data>
 		<key>Headers/KalmanFilter.h</key>
 		<data>
@@ -28,10 +24,6 @@
 		<data>
 		mXiqqWcjChQNJQN7TZm6eFISdqE=
 		</data>
-		<key>Modules/.DS_Store</key>
-		<data>
-		VIkwSk68vMmDkhEz4G5sM9ktbos=
-		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		hRRoGoKnxv+y/6htdzuqCfisBDo=
@@ -43,11 +35,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			S2hodKBRsD3yAPCJEQ/hPmCCTVo=
+			lNuNP8T/7/aZ6XULk84AGqiyeJs=
 			</data>
 			<key>hash2</key>
 			<data>
-			7TvlAW5tuIbIwCitLH9IBBI9SJDtqyzKB5EtonuNpog=
+			T1oLBdADOf+5+VcbJo5J5nkaBJHuedHhXPn3ILDqcWA=
 			</data>
 		</dict>
 		<key>Headers/KalmanFilter.h</key>

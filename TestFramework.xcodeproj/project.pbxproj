@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1123A153240E499A0093E8AB /* PositionFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1123A152240E499A0093E8AB /* PositionFramework.framework */; };
 		1192D9F8240A9A2A00EDF509 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1192D9F7240A9A2A00EDF509 /* AppDelegate.swift */; };
 		1192D9FA240A9A2A00EDF509 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1192D9F9240A9A2A00EDF509 /* SceneDelegate.swift */; };
 		1192D9FC240A9A2A00EDF509 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1192D9FB240A9A2A00EDF509 /* ViewController.swift */; };
@@ -14,10 +15,10 @@
 		1192DA01240A9A2E00EDF509 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1192DA00240A9A2E00EDF509 /* Assets.xcassets */; };
 		1192DA04240A9A2E00EDF509 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1192DA02240A9A2E00EDF509 /* LaunchScreen.storyboard */; };
 		1192DA35240ACD5200EDF509 /* figurePrint Library.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1192DA34240ACD5200EDF509 /* figurePrint Library.plist */; };
-		1192DA3B240B832A00EDF509 /* PositionFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1192DA3A240B832A00EDF509 /* PositionFramework.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1123A152240E499A0093E8AB /* PositionFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PositionFramework.framework; sourceTree = "<group>"; };
 		1192D9F4240A9A2A00EDF509 /* TestFramework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestFramework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1192D9F7240A9A2A00EDF509 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1192D9F9240A9A2A00EDF509 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,7 +29,6 @@
 		1192DA05240A9A2E00EDF509 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1192DA24240AC48800EDF509 /* BridgeHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgeHeader.h; sourceTree = "<group>"; };
 		1192DA34240ACD5200EDF509 /* figurePrint Library.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "figurePrint Library.plist"; sourceTree = "<group>"; };
-		1192DA3A240B832A00EDF509 /* PositionFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PositionFramework.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,7 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1192DA3B240B832A00EDF509 /* PositionFramework.framework in Frameworks */,
+				1123A153240E499A0093E8AB /* PositionFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,7 +63,7 @@
 		1192D9F6240A9A2A00EDF509 /* TestFramework */ = {
 			isa = PBXGroup;
 			children = (
-				1192DA3A240B832A00EDF509 /* PositionFramework.framework */,
+				1123A152240E499A0093E8AB /* PositionFramework.framework */,
 				1192DA34240ACD5200EDF509 /* figurePrint Library.plist */,
 				1192D9F7240A9A2A00EDF509 /* AppDelegate.swift */,
 				1192D9F9240A9A2A00EDF509 /* SceneDelegate.swift */,
